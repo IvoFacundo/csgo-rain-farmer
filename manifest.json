@@ -1,0 +1,27 @@
+{
+	"name": "CSGOEmpire Rain Farmer",
+	"version": "1.0",
+	"description": "CSGOEmpire Rain Farmer",
+	"permissions": [
+		"activeTab",
+		"declarativeContent"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://csgoempire.com/*",
+				"*://csgoempire.gg/*"
+			],
+			"js": [
+				"background.js"
+			]
+		}
+	],
+	"manifest_version": 2,
+	"icons": {
+		"16": "images/csgoempire16.png",
+		"32": "images/csgoempire32.png",
+		"48": "images/csgoempire48.png",
+		"128": "images/csgoempire128.png"
+	}
+}
